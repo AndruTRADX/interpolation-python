@@ -27,9 +27,17 @@ def NewtonPol(datos):
     
     return F, P
 
-datost = [(3.0, 2310), (5.0, 3090), (7.0, 3940), (20.0, 8000)]
+datost = [
+    (3.0, 118.305),
+    (6.0, 203.22),
+    (9.0, 254.745),
+    (12.0, 272.88),
+    (15.0, 257.625),
+    (18.0, 209.1562)
+]
+
 T, P = NewtonPol(datost)
 print("\nTabla de diferencias divididas:")
 pprint(T)
 print("\nEvaluar el polinomio en x=10")
-print(P(10.0))
+print(P(25.0))
